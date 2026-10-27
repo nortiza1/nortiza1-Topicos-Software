@@ -7,12 +7,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Comment extends Model
 {
-    /**
-     * PRODUCT ATTRIBUTES
-     * $this->attributes['id'] - int - contains the product primary key (id)
-     * $this->attributes['description'] - string - contains the comment description
-     * $this->product - Product - contains the associated Product
-     */
     protected $fillable = ['description', 'product_id'];
 
     public function getId(): int
